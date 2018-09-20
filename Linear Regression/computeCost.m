@@ -13,9 +13,9 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-constant_expression = (1/(2*m));
-main_expression = sum(((X * theta) - y).^2);
-J = constant_expression * main_expression;
+constant_term = (1/(2*m));
+main_term = sum(((X * theta) - y).^2);
+J = constant_term * main_term;
 
 % =========================================================================
 
