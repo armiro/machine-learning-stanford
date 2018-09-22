@@ -23,10 +23,11 @@ for iter = 1:num_iters
     
     % defining initial terms which need to be cleared on every iteration
     temp = zeros(length(theta), 1);
-    main_term = 0;
     
     % assign values to all the elements of theta vector
     for theta_element = 1:length(theta)
+      
+      main_term = 0;
       % we need to perform on all data records (batch gradient descent)
       for i = 1:m
         sigma_term = ((X(i, :) * theta) - y(i)) * X(i, theta_element);
